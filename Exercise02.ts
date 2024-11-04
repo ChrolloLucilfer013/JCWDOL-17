@@ -40,3 +40,16 @@ if (primestatus){
 
     
 }
+
+//Exercise No.3
+const var03 =[3,5];
+let buff01 =[0,0];
+
+for (let index2 = 0; index2 < 2; index2++) {
+    for (let index1 = 1; index1 <= var03[index2]; index1++) {
+        buff01[index2]=buff01[index2] + index1;
+    }    
+}
+
+console.log(buff01[0]);
+console.log(buff01[1]);
