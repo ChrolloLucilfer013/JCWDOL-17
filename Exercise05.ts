@@ -22,7 +22,7 @@ console.log("Exercise No.2:");
 //Exercise No.3
 console.log("Exercise No.3:");
     const smallest = (numbers: number[]) =>
-        console.log(numbers.sort((a, b) => a - b)[1]);
+        console.log("second smallest number is "+numbers.sort((a, b) => a - b)[1]);
   
     smallest([5, 3, 1, 7, 2, 6]); 
 
@@ -43,13 +43,11 @@ console.log("Exercise No.5:");
 
 //Exercise No.6
 console.log("Exercise No.6:");
-    const sumNumber = (mixed: any[]) =>
+    const sumvar = (mixed: any[]) =>
         console.log(
-            mixed.reduce(
-            (sum, element) => (typeof element == "number" ? sum + element : sum),0
-      )
+            mixed.reduce((x1, x2) => (typeof x1 == "number" ? x1 + x2 : x2),0)
     );
   
-    sumNumber(["3", 1, "string", null, false, undefined, 2]);
+    sumvar([4, 1, "string", null, false, undefined, 2,3,2]);
       
 
