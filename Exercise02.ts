@@ -1,17 +1,13 @@
 //Exercise N0.1
+console.log("Exercise No.1:")
 const var01 = [25,2];
 
 for (let i = 0; i < 2; i++) {
-    if (var01[i]%2){
-        console.log(`${var01[i]} Even Value`); // for even value
-    
-    } else {
-        console.log(`${var01[i]} Odd Value`); // for odd value
-    }
-    
+    console.log(var01[i] % 2 == 0? var01[i] + "even": var01[i] + "odd")
 }
 
 //Exercise No.2
+console.log("Exercise No.2:")
 const var02 = [6,7];
 let primestatus:boolean = true;
 //Number = 1
@@ -42,6 +38,7 @@ if (primestatus){
 }
 
 //Exercise No.3
+console.log("Exercise No.3:")
 const var03 =[3,5];
 let buff01 =[0,0];
 
@@ -55,6 +52,7 @@ console.log(buff01[0]);
 console.log(buff01[1]);
 
 //Exercose No.4
+console.log("Exercise No.4:")
 let var04 = [4,6]
 let Result04: number[] = [];
 let BuffResult:number = 0;
@@ -69,6 +67,26 @@ for (let m = 0; m < 2; m++) {
 
 console.log(`Result is ${Result04[0]}`);
 console.log(`Result is ${Result04[1]}`);
+
+//Exercise No.5 
+console.log("Exercise No.5:")
+
+let NumVar = 15;
+let x1 = 0, x2=1, buff;
+let buffsum;
+
+console.log("Fibonacci '15' :")
+
+for (let index4 = 1; index4 < NumVar ; index4++) {
+    buff = x1 + x2;
+    x1 = x2;
+    x2 = buff; 
+
+}
+
+console.log(buff);
+
+
 
 
 
