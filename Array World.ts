@@ -40,9 +40,12 @@ alpha.forEach(function (value) {
 
 
 //indeof untuk mencari nilai index value di dalam sebuah array
-let indexoftest = [12, 5, 8, 130, 44].indexOf(130); //disini kita mencari nilai index dari nilai 130 didalam sebuah array
+let indexoftest = [12, 5, 8, 130, 44].indexOf(130); //disini kita mencari nilai index dari nilai 130 didalam sebuah array dihitung dari sebelah kiri/depan
 console.log("Index of 130 is : " + indexoftest );
 
+//lastindeof untuk mencari nilai index value di dalam sebuah array
+let lastindeofindexoftest = [12, 5, 8, 130, 44].lastIndexOf(5); //disini kita mencari nilai index dari nilai 5 didalam sebuah array dari sebelah kanan/belakang
+console.log("Last Index of 5 is : " + lastindeofindexoftest);
 //join 
 let arrjoinstr = new Array("First","Second","Third"); 
 let arrjoinnum = new Array(1, 2, 3); 
@@ -57,3 +60,13 @@ console.log("Test Array.Join2 : " + stry );
           
 let strz = arrjoinstr.join(" + "); 
 console.log("Test Array.Join3 : " + strz );
+
+//Map
+let nummap:number[] = [1, 4, 9]; 
+let roots = nummap.map(
+   (callbackfn: (value: number, index: number, array: number[]) => 
+   unknown, thisarg :any) unknown[]); 
+
+console.log("Test Array.Map : " + roots );
+
+
