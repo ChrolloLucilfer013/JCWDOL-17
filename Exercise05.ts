@@ -43,11 +43,25 @@ console.log("Exercise No.5:");
 
 //Exercise No.6
 console.log("Exercise No.6:");
-    const sumvar = (mixed: any[]) =>
+    const sumvar = (mixed: any[]) =>            //create a function
         console.log(
             mixed.reduce((x1, x2) => (typeof x1 == "number" ? x1 + x2 : x2),0)
     );
   
     sumvar([4, 1, "string", null, false, undefined, 2,3,2]);
-      
+
+//Exercise No.7
+console.log("Exercise No.7:");
+const insertNumbers = (max: number, ...numbers: number[]) =>    //create a function
+    console.log([...new Array(max)].map((n, i) => numbers[i]));
+  
+  insertNumbers(5, 5, 10, 24, 3, 6, 7, 8);
+
+//Exercise No.8
+console.log("Exercise No.8:");
+const combine = (arr1: number[], arr2: number[]) =>     //create a function
+    console.log(arr1.concat(arr2));
+  
+  combine([1, 2, 3], [4, 5, 6]);
+    
 
