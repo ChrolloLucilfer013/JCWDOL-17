@@ -1,14 +1,4 @@
-/*Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
-Example 1:
-Input: nums = [2,2,1]
-Output: 1
-Example 2:
-Input: nums = [4,1,2,1,2]
-Output: 4
-Example 3:
-Input: nums = [1]
-Output: 1*/
-//Excercise Tambahan
+//Exercise Tambahan
 //4 types triangle
 /*
 ****
@@ -49,9 +39,9 @@ function FourTriangle (h:number): void {
   
 }
 
-FourTriangle(4); 
+FourTriangle(4); //Result triangle
 
-//Excercise 01
+//Exercise 01
 //Create a function to convert Excel sheet column title to its corresponding column number.
 function ConvertExcel(str:string): number {
     let col = 0;
@@ -67,6 +57,21 @@ function ConvertExcel(str:string): number {
     return coloumNum;
 }
 const strxexample = "AA"; 
-console.log(strxexample); //Output 27
+console.log(ConvertExcel(strxexample)); //Output 27
 
+//Exercise 02
+/* Given a non-empty array of integers nums, every element appears twice except for one. Find that
+single one.
+*/
+const findFirstNonDuplicate = (arr: number[]) => {
+    const set = new Set(arr); // [2,2,1] => [2,1]
+  
+    set.forEach((value) => {
+      if (arr.filter((n) => n == value).length == 1) 
+        return console.log(value);
+    });
+  };
+  
+findFirstNonDuplicate([2, 2, 1]);
+findFirstNonDuplicate([4, 1, 2, 1, 2]);
 
